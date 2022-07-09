@@ -7,7 +7,7 @@ const Routes = () => {
     <div className='p-4'>
         <ReactRoutes>
             <Route path="/" element={<Navigate to="/search"/>} />
-            {['/search', '/images', '/news', '/videos'].map((item, index) => (
+            {['/search', '/image', '/news', '/videos'].map((item, index) => (
                 <Route key={index} path={item} element={<Results />} />
             ))}
         </ReactRoutes>
